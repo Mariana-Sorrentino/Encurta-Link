@@ -1,0 +1,111 @@
+body{
+  overflow: hidden;
+}
+
+.linksContainer{
+    max-width: 1120px;
+    margin: 32px auto 0 auto;
+}
+
+.linksHeader{
+    display: flex;
+    flex-direction: row;
+}
+
+.linksHeader svg{
+    margin-right: 14px;
+    margin-top: 50px;    
+}
+
+/* white-space: nowrap; = para não quebrar a linha
+   overflow: hidden; = para não ultrapassar o limite da div
+   text-overflow: ellipsis; = para aparecer os "..." quando quebrar o texto caso ele seja grande */
+.link{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.linksHeader h1{
+    color: #fff;
+    margin-top: 50px;
+}
+
+.linksItem{
+    width: 950px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 8px;
+}
+
+/* :last-child: Aplica o estilo apenas no último item encontrado */
+.linksItem:last-child{
+    margin-bottom: 18px;
+}
+
+.link{
+    border: 0;
+    width: 100%;
+    min-width: 80%;
+    border-radius: 8px;
+    height: 46px;
+    background-color: rgb(255, 255, 255, 0.15);
+    margin-right: 14px;
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.link svg{
+    margin-right: 14px;
+}
+
+.linkDelet{
+    border: 0;
+    background-color: transparent;
+}
+
+.linkItem{
+    width: 340px;
+    height: 40px;
+    border-radius: 8px;
+    margin-top: 35px;
+    background-color: rgb(255, 255, 255, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.emptyText{
+    width: 100%;
+    text-align: center;    
+    color: #fff;
+}
+
+
+
+@media (max-width: 715px){
+
+    .linksContainer{
+        width: 90%;
+    }
+
+    .logo h1{
+        font-size: 40px;
+    }
+
+    .linksItem{
+        width: 100%;
+    }
+
+    .link{
+        width: 100%;
+    }
+
+    .link svg{
+        display: none;
+    }
+}
